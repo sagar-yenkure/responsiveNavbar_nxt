@@ -45,7 +45,7 @@ function SideNavbar() {
           <div className="flex flex-col justify-center item-center">
             <div className=" my-4 border-b border-gray-100 pb-4">
               {Nav_items.map((item) => {
-                return <div className="flex space-y-1  mb-2 justify-start items-center gap-4 pl-5 hover:bg-purple-700 p-2 rounded-md group cursor-pointer hover:shadow-lg m-auto">
+                return <div key={item.id} className="flex space-y-1  mb-2 justify-start items-center gap-4 pl-5 hover:bg-purple-700 p-2 rounded-md group cursor-pointer hover:shadow-lg m-auto">
                   <span className=" text-4xl md:text-2xl text-gray-600 group-hover:text-white ">
                     <item.icon />
                   </span>
